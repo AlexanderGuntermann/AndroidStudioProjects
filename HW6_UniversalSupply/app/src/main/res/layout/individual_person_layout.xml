@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="125dp">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Name"
+        android:layout_marginTop="23dp"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/Salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Age"
+        android:layout_marginTop="21dp"
+        android:text="Salary" />
+
+    <TextView
+        android:id="@+id/food1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Age"
+        android:layout_alignBottom="@+id/Age"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:text="food1" />
+
+    <TextView
+        android:id="@+id/food2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/food1"
+        android:layout_below="@+id/food1"
+        android:text="food2" />
+
+    <ImageView
+        android:id="@+id/genderpicture"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/Age"
+        android:layout_toStartOf="@+id/meatImg"
+        app:srcCompat="@drawable/male" />
+
+    <ImageView
+        android:id="@+id/meatImg"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/colorpicture"
+        app:srcCompat="@drawable/vegetarian" />
+
+    <ImageView
+        android:id="@+id/colorpicture"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="13dp"
+        android:layout_toStartOf="@+id/food1"
+        app:srcCompat="@android:color/black" />
+
+</RelativeLayout>

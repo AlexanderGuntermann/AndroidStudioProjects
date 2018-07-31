@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView25"
+        android:layout_alignParentStart="true"
+        android:text="@string/memory_relative"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        android:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:entries="@array/menu_options"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/apple1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/apple"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/apple"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/banana1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/apple1"
+        android:layout_marginStart="43dp"
+        android:layout_toEndOf="@+id/apple1"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/banana"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/banana"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/cherry1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/banana1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/banana1"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/cherry"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/cherry"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/grapes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/apple1"
+        android:layout_marginStart="33dp"
+        android:layout_toEndOf="@+id/cherry1"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/grapes"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/grapes"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/kiwi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/apple1"
+        android:layout_below="@+id/apple1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/kiwi"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/kiwi"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/mango1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/banana1"
+        android:layout_alignTop="@+id/kiwi1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/mango"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/mango"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/orange2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cherry1"
+        android:layout_alignTop="@+id/mango1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/orange"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/orange"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/papaya1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/grapes1"
+        android:layout_alignTop="@+id/orange2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/papaya"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/papaya"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/pineapple1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/kiwi1"
+        android:layout_below="@+id/kiwi1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pineapple"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/pineapple"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/starfruit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mango1"
+        android:layout_alignTop="@+id/pineapple1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/starfruit"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/starfruit"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/strawberry1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/orange2"
+        android:layout_alignTop="@+id/starfruit2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/strawberry"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/strawberry"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/watermelon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/papaya1"
+        android:layout_alignTop="@+id/strawberry1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/watermelon"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/watermelon"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/apple2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pineapple1"
+        android:layout_below="@+id/pineapple1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/apple"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/apple"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/banana2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/starfruit2"
+        android:layout_below="@+id/starfruit2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/banana"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/banana"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/cherry2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/strawberry1"
+        android:layout_below="@+id/strawberry1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/cherry"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/cherry"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/grapes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/watermelon2"
+        android:layout_below="@+id/watermelon2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/grapes"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/grapes"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/kiwi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/apple2"
+        android:layout_below="@+id/apple2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/kiwi"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/kiwi"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/mango2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/banana2"
+        android:layout_below="@+id/banana2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/mango"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/mango"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/orange1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cherry2"
+        android:layout_below="@+id/cherry2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/orange"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/orange"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/papaya2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/grapes2"
+        android:layout_below="@+id/grapes2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/papaya"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/papaya"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/pineapple2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/kiwi2"
+        android:layout_below="@+id/kiwi2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pineapple"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/pineapple"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/strawberry2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mango2"
+        android:layout_below="@+id/mango2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/strawberry"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/strawberry"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/watermelon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/orange1"
+        android:layout_below="@+id/orange1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/watermelon"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/watermelon"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/starfruit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/papaya2"
+        android:layout_below="@+id/papaya2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/starfruit"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:tag="@string/starfruit"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/front" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MemoryGame</string>
+    <string name="apple">apple</string>
+    <string name="memory_relative">Memory: Relative</string>
+    <string name="banana">banana</string>
+    <string name="cherry">cherry</string>
+    <string name="grapes">grapes</string>
+    <string name="papaya">papaya</string>
+    <string name="starfruit">starfruit</string>
+    <string name="watermelon">watermelon</string>
+    <string name="strawberry">strawberry</string>
+    <string name="pineapple">pineapple</string>
+    <string name="orange">orange</string>
+    <string name="mango">mango</string>
+    <string name="kiwi">kiwi</string>
+    <string name="allfruit">allfruit</string>
+    <string name="action_settings">action_settings</string>
+</resources>

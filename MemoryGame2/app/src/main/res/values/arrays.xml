@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_options">
+        <item>"Click here to select how many cards"</item>
+        <item>Find 4</item>
+        <item>Find 6</item>
+        <item>Find 12</item>
+
+    </string-array>
+</resources>

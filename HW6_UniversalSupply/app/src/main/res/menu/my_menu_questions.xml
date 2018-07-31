@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="All employees"
+        android:id="@+id/Everyone"></item>
+    <item android:title="Mr. Milton?"
+        android:id="@+id/MrMilton">
+        <menu>
+            <item android:title="Who likes chicken?"
+                android:id="@+id/likesChicken">
+            </item>
+            <item android:title="Who likes Goat?"
+                android:id="@+id/likesGoat">
+
+            </item>
+            <item android:title="Who makes less than 60K?"
+                android:id="@+id/lessThan60">
+            </item>
+            <item
+                android:id="@+id/youngerThan38"
+                android:title="Who is younger than 38?"
+                >
+            </item><item android:title="Who likes blue and are female?"
+            android:id="@+id/likesBlueAndFemale"></item>
+        </menu>
+    </item>
+
+    <item android:title="Mr. Grunt"
+        android:id="@+id/MrGrunt">
+        <menu>
+            <item android:title="Who makes more than 80K?"
+                android:id="@+id/moreThan80">
+            </item>
+            <item android:title="Who are older than 30 that have poultry as their diet?"
+                android:id="@+id/olderThan30Poultry">
+
+            </item>
+            <item android:title="Who like turkey as their second food and that are under 35?"
+                android:id="@+id/turkey2ndAndUnder35">
+            </item>
+            <item
+                android:id="@+id/femaleRedAndMeatLover"
+                android:title="Who are female that like the color red and are red meat lovers?"
+                >
+            </item>
+            <item android:title= "Who are male that are vegetarians that like tofu for their first or second favorite food"
+                android:id="@+id/maleVegetarianTofuFirstOrSecond"></item>
+        </menu>
+    </item>
+    <item android:title="Team questions"
+        android:id="@+id/team">
+        <menu>
+
+            <item android:title="Who their last name starts with M or O and favorite color is green?"
+                android:id="@+id/MorOGreen">
+            </item>
+            <item android:title="Who are female that eats red meat that like green then get a list of employees that are male that eat poultry that likes yellow. Then from those two lists, return a list for those over 38 that makes less than 95K?"
+                android:id="@+id/lastInsaneTeamQuery">
+
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/cleanAndDelete"
+        android:title="Delete database"
+        >
+    </item>
+</menu>
